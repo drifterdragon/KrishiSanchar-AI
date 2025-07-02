@@ -9,7 +9,7 @@ from PIL import Image
 import re
 import io
 #Loading the model
-model_crop = joblib.load("./ML Models/cropclassification.pkl")
+model_crop = joblib.load("./Ml Models/cropclassification.pkl")
 model_fertilizer = load_model("./Ml Models/fertilizer_prediction.keras")
 scaler = joblib.load("./Ml Models/scaler.pkl")
 input_columns = joblib.load("./Ml Models/input_columns_names.pkl")
