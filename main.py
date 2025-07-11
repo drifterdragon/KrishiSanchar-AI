@@ -14,7 +14,7 @@ model_fertilizer = load_model("./Ml Models/fertilizer_prediction.keras")
 scaler = joblib.load("./Ml Models/scaler.pkl")
 input_columns = joblib.load("./Ml Models/input_columns_names.pkl")
 model_tomato = load_model("./Ml Models/Tomato_disease_model.keras")
-model_potato=load_model("./Ml Models/Potato_disease_model.keras")
+model_potato=load_model("./Ml Models/potato_disease_model.keras")
 model_maize=load_model("./Ml Models/maize_disease_model.keras")
 # Class labels
 class_names_potatos = ['Potato___Early_blight', 'Potato___Late_blight', 'Potato___healthy']
