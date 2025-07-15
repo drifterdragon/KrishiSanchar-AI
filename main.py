@@ -169,7 +169,7 @@ async def predict_tomato(file: UploadFile = File(...)):
 
 # Potato disease prediction
 @app.post("/predict/Potato")
-async def predict_tomato(file: UploadFile = File(...)):
+async def predict_Potato(file: UploadFile = File(...)):
     try:
         image = Image.open(io.BytesIO(await file.read()))
         prediction = predict_image(image, model_potato)
@@ -203,7 +203,7 @@ async def predict_tomato(file: UploadFile = File(...)):
 
 # Potato disease prediction
 @app.post("/predict/Maize")
-async def predict_tomato(file: UploadFile = File(...)):
+async def predict_Maize(file: UploadFile = File(...)):
     try:
         image = Image.open(io.BytesIO(await file.read()))
         prediction = predict_image(image, model_maize)
